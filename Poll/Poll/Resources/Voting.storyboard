@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RKD-KX-lXH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--voting-->
+        <scene sceneID="BRh-hl-EtL">
+            <objects>
+                <viewController id="RKD-KX-lXH" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ReV-f6-3ef">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2UC-vE-q4D">
+                                <rect key="frame" x="0.0" y="151" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is your favorite kind of music?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gF-Ro-Qjt">
+                                <rect key="frame" x="0.0" y="111" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5O7-nk-jzb">
+                                <rect key="frame" x="0.0" y="258" width="375" height="30"/>
+                                <state key="normal" title="Submit View"/>
+                                <connections>
+                                    <action selector="submit:" destination="RKD-KX-lXH" eventType="touchUpInside" id="q6h-fj-Gba"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="response" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37r-lJ-mpG">
+                                <rect key="frame" x="0.0" y="198" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8gF-Ro-Qjt" firstAttribute="leading" secondItem="a6k-7o-8bs" secondAttribute="leading" id="5rs-an-xjn"/>
+                            <constraint firstItem="a6k-7o-8bs" firstAttribute="trailing" secondItem="8gF-Ro-Qjt" secondAttribute="trailing" id="8yc-sI-qRS"/>
+                            <constraint firstItem="a6k-7o-8bs" firstAttribute="trailing" secondItem="5O7-nk-jzb" secondAttribute="trailing" id="ClC-3S-9vn"/>
+                            <constraint firstItem="8gF-Ro-Qjt" firstAttribute="top" secondItem="a6k-7o-8bs" secondAttribute="top" constant="133" id="DVv-We-clI"/>
+                            <constraint firstItem="37r-lJ-mpG" firstAttribute="top" secondItem="2UC-vE-q4D" secondAttribute="bottom" constant="8" symbolic="YES" id="FZb-2C-Xc4"/>
+                            <constraint firstItem="5O7-nk-jzb" firstAttribute="top" secondItem="37r-lJ-mpG" secondAttribute="bottom" constant="8" symbolic="YES" id="HIg-gR-zJf"/>
+                            <constraint firstItem="a6k-7o-8bs" firstAttribute="trailing" secondItem="2UC-vE-q4D" secondAttribute="trailing" id="JK8-vN-7tG"/>
+                            <constraint firstItem="5O7-nk-jzb" firstAttribute="leading" secondItem="a6k-7o-8bs" secondAttribute="leading" id="XUm-qd-6Hg"/>
+                            <constraint firstItem="2UC-vE-q4D" firstAttribute="leading" secondItem="a6k-7o-8bs" secondAttribute="leading" id="b7X-1h-VXH"/>
+                            <constraint firstItem="2UC-vE-q4D" firstAttribute="top" secondItem="8gF-Ro-Qjt" secondAttribute="bottom" constant="8" symbolic="YES" id="jmg-m0-aPy"/>
+                            <constraint firstItem="a6k-7o-8bs" firstAttribute="trailing" secondItem="37r-lJ-mpG" secondAttribute="trailing" id="tl8-zb-zxI"/>
+                            <constraint firstItem="37r-lJ-mpG" firstAttribute="leading" secondItem="a6k-7o-8bs" secondAttribute="leading" id="u8g-Q1-Byy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a6k-7o-8bs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="voting" id="ss7-Oa-6Nk"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameTextFied" destination="2UC-vE-q4D" id="3vS-oD-d9l"/>
+                        <outlet property="responseTextField" destination="37r-lJ-mpG" id="wvb-nW-k4P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uml-RK-LHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.80000000000001" y="139.880059970015"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9457D919210A557C008D498C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457D918210A557C008D498C /* AppDelegate.swift */; };
+		9457D91E210A557C008D498C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9457D91C210A557C008D498C /* Main.storyboard */; };
+		9457D920210A55A4008D498C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9457D91F210A55A4008D498C /* Assets.xcassets */; };
+		9457D923210A55A4008D498C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9457D921210A55A4008D498C /* LaunchScreen.storyboard */; };
+		9457D932210A595E008D498C /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457D931210A595E008D498C /* Vote.swift */; };
+		946182E4210A84220015A42F /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946182E3210A84220015A42F /* VoteControllerProtocol.swift */; };
+		946BB9E8210A5B45003E2476 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946BB9E7210A5B45003E2476 /* VoteController.swift */; };
+		946BB9EC210A5F27003E2476 /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946BB9EB210A5F27003E2476 /* Voting.storyboard */; };
+		946BB9EE210A622A003E2476 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946BB9ED210A622A003E2476 /* VotingViewController.swift */; };
+		946BB9F1210A629C003E2476 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946BB9F0210A629C003E2476 /* Results.storyboard */; };
+		946BB9F3210A6332003E2476 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946BB9F2210A6332003E2476 /* ResultsTableViewController.swift */; };
+		946BB9F5210A63A0003E2476 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946BB9F4210A63A0003E2476 /* Combined.storyboard */; };
+		946BB9FB210A72B4003E2476 /* PollingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946BB9FA210A72B4003E2476 /* PollingTabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9457D915210A557C008D498C /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9457D918210A557C008D498C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9457D91D210A557C008D498C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9457D91F210A55A4008D498C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9457D922210A55A4008D498C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9457D924210A55A4008D498C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9457D931210A595E008D498C /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		946182E3210A84220015A42F /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
+		946BB9E7210A5B45003E2476 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		946BB9EB210A5F27003E2476 /* Voting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voting.storyboard; sourceTree = "<group>"; };
+		946BB9ED210A622A003E2476 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
+		946BB9F0210A629C003E2476 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		946BB9F2210A6332003E2476 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		946BB9F4210A63A0003E2476 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
+		946BB9FA210A72B4003E2476 /* PollingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9457D912210A557C008D498C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9457D90C210A557C008D498C = {
+			isa = PBXGroup;
+			children = (
+				9457D917210A557C008D498C /* Poll */,
+				9457D916210A557C008D498C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9457D916210A557C008D498C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9457D915210A557C008D498C /* Poll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9457D917210A557C008D498C /* Poll */ = {
+			isa = PBXGroup;
+			children = (
+				9457D918210A557C008D498C /* AppDelegate.swift */,
+				946182E6210A85440015A42F /* Protocol */,
+				946BB9EF210A623C003E2476 /* View Controller */,
+				946BB9E9210A5D54003E2476 /* model controller */,
+				946BB9E6210A5AE3003E2476 /* model */,
+				946BB9EA210A5E68003E2476 /* Resources */,
+			);
+			path = Poll;
+			sourceTree = "<group>";
+		};
+		946182E6210A85440015A42F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				946182E3210A84220015A42F /* VoteControllerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		946BB9E6210A5AE3003E2476 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9457D931210A595E008D498C /* Vote.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		946BB9E9210A5D54003E2476 /* model controller */ = {
+			isa = PBXGroup;
+			children = (
+				946BB9E7210A5B45003E2476 /* VoteController.swift */,
+			);
+			path = "model controller";
+			sourceTree = "<group>";
+		};
+		946BB9EA210A5E68003E2476 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				946BB9F0210A629C003E2476 /* Results.storyboard */,
+				946BB9F4210A63A0003E2476 /* Combined.storyboard */,
+				946BB9EB210A5F27003E2476 /* Voting.storyboard */,
+				9457D921210A55A4008D498C /* LaunchScreen.storyboard */,
+				9457D91C210A557C008D498C /* Main.storyboard */,
+				9457D924210A55A4008D498C /* Info.plist */,
+				9457D91F210A55A4008D498C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		946BB9EF210A623C003E2476 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				946BB9FA210A72B4003E2476 /* PollingTabBarController.swift */,
+				946BB9F2210A6332003E2476 /* ResultsTableViewController.swift */,
+				946BB9ED210A622A003E2476 /* VotingViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9457D914210A557C008D498C /* Poll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9457D927210A55A4008D498C /* Build configuration list for PBXNativeTarget "Poll" */;
+			buildPhases = (
+				9457D911210A557C008D498C /* Sources */,
+				9457D912210A557C008D498C /* Frameworks */,
+				9457D913210A557C008D498C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Poll;
+			productName = Poll;
+			productReference = 9457D915210A557C008D498C /* Poll.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9457D90D210A557C008D498C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Iyin Raphael";
+				TargetAttributes = {
+					9457D914210A557C008D498C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 9457D910210A557C008D498C /* Build configuration list for PBXProject "Poll" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9457D90C210A557C008D498C;
+			productRefGroup = 9457D916210A557C008D498C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9457D914210A557C008D498C /* Poll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9457D913210A557C008D498C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9457D923210A55A4008D498C /* LaunchScreen.storyboard in Resources */,
+				946BB9F1210A629C003E2476 /* Results.storyboard in Resources */,
+				9457D920210A55A4008D498C /* Assets.xcassets in Resources */,
+				9457D91E210A557C008D498C /* Main.storyboard in Resources */,
+				946BB9EC210A5F27003E2476 /* Voting.storyboard in Resources */,
+				946BB9F5210A63A0003E2476 /* Combined.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9457D911210A557C008D498C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946BB9E8210A5B45003E2476 /* VoteController.swift in Sources */,
+				946BB9FB210A72B4003E2476 /* PollingTabBarController.swift in Sources */,
+				9457D932210A595E008D498C /* Vote.swift in Sources */,
+				9457D919210A557C008D498C /* AppDelegate.swift in Sources */,
+				946182E4210A84220015A42F /* VoteControllerProtocol.swift in Sources */,
+				946BB9EE210A622A003E2476 /* VotingViewController.swift in Sources */,
+				946BB9F3210A6332003E2476 /* ResultsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9457D91C210A557C008D498C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9457D91D210A557C008D498C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9457D921210A55A4008D498C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9457D922210A55A4008D498C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9457D925210A55A4008D498C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9457D926210A55A4008D498C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9457D928210A55A4008D498C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iyin.Poll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9457D929210A55A4008D498C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Poll/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iyin.Poll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9457D910210A557C008D498C /* Build configuration list for PBXProject "Poll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9457D925210A55A4008D498C /* Debug */,
+				9457D926210A55A4008D498C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9457D927210A55A4008D498C /* Build configuration list for PBXNativeTarget "Poll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9457D928210A55A4008D498C /* Debug */,
+				9457D929210A55A4008D498C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9457D90D210A557C008D498C /* Project object */;
+}
